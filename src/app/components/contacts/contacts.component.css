@@ -1,0 +1,44 @@
+/* section contancts */
+
+#contacts h2{
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color:#393F43;
+}
+ .selectNav{
+  border: 1px solid #03B6C8;
+  width: 81px;
+  height: 3px;
+  margin-top: 20px;
+  background-color: #03B6C8;
+}
+nav ul li {
+    margin-left: 1.8rem;
+    font-size: 14px;
+    font-weight: 650;
+    color: #b3b3b3;
+}
+.selectLi {
+  color: #393F43 !important;
+}
+.btnsDiv button{
+  margin-left: 3px;
+}
+.addNew{
+  color:white;
+  background-color: #03B6C8;
+  width: 129px;
+  height: 40px;
+  font-size: 15px;
+}
+.download,
+.server{
+    font-size: 15px;  
+    border: 1px solid #b3b3b3;
+    background-color: white;
+    color: #b3b3b3;
+    width: 50px;
+    height: 40px;
+     
+}

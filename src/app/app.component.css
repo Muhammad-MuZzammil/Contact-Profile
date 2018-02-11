@@ -1,0 +1,35 @@
+/* section headerNav */
+
+.navbar-brand{
+  color: #E24444 !important;
+  font-size: 1.8rem !important;
+  font-weight: 500 ;
+  margin-left: 2rem;
+}
+
+.headerNav nav{
+  background-color: white !important;
+  margin-top: 0.7rem;
+}
+.headerNav ul li {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-left: 1.8rem;
+  margin-top: 5px;
+}
+.headerNav ul li a{
+  color: #b3b3b3;
+  
+}
+.dropdown span{
+  font-size:0.9rem;
+  font-weight: 700;
+  color: #b3b3b3;
+  
+  
+}
+.searchAndSubscribe span{
+  margin-left: 1rem;
+  font-weight: 700;
+  color: #b3b3b3;
+}

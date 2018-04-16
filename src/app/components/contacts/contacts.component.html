@@ -1,40 +1,44 @@
-<section id="contacts">
-  <h2>
-    Contacts
-  </h2>
+<div class="container">
+  <section id="contacts">
+    <h2>
+      Contacts
+    </h2>
 
-  <div class="contactsNav">
-    <nav class="navbar navbar-expand   ">
+    <div class="contactsNav">
+      <nav class="navbar navbar-expand   ">
 
-      <ul class="navbar-nav  col-xl-9 col-lg-7  col-md-6 ">
-        <li class="nav-item">
-          <a class="nav-link" [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS )}" (click)="selectNavigationState(NAVIGATION_STATE.ALL_CONTACTS)">All Contacts</a>
-          <div style="margin-left: 6px;" [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS )}"></div>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link " [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.CAPTURED )}" (click)="selectNavigationState(NAVIGATION_STATE.CAPTURED)">Captured</a>
-          <div [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.CAPTURED )}"></div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.CONNECTED )}" (click)="selectNavigationState(NAVIGATION_STATE.CONNECTED)">Connected</a>
-          <div [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.CONNECTED )}"></div>
-        </li>
-      </ul>
-      <div class="btnsDiv   col-xl-4 col-lg-4 col-md-4  ">
-        <button class="btn addNew">
-          <i class="fa fa-user-plus" aria-hidden="true"></i> Add New</button>
-        <button class="btn server">
-          <i class="fa fa-server" aria-hidden="true"></i>
-        </button>
-        <button class="btn download">
-          <i class="fa fa-download" aria-hidden="true"></i>
-        </button>
+        <ul class="navbar-nav  col-xl-9 col-lg-7  col-md-6 ">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS )}" (click)="selectNavigationState(NAVIGATION_STATE.ALL_CONTACTS)">All Contacts</a>
+            <div style="margin-left: 6px;" [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS )}"></div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.CAPTURED )}" (click)="selectNavigationState(NAVIGATION_STATE.CAPTURED)">Captured</a>
+            <div [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.CAPTURED )}"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " [ngClass]="{selectLi: (selectedNavigationState == NAVIGATION_STATE.CONNECTED )}" (click)="selectNavigationState(NAVIGATION_STATE.CONNECTED)">Connected</a>
+            <div [ngClass]="{selectNav: (selectedNavigationState == NAVIGATION_STATE.CONNECTED )}"></div>
+          </li>
+        </ul>
+        <div class="btnsDiv   col-xl-4 col-lg-4 col-md-4  ">
+          <button class="btn addNew">
+            <i class="fa fa-user-plus" aria-hidden="true"></i> Add New</button>
+          <button class="btn server">
+            <i class="fa fa-server" aria-hidden="true"></i>
+          </button>
+          <button class="btn download">
+            <i class="fa fa-download" aria-hidden="true"></i>
+          </button>
 
-      </div>
-    </nav>
-  </div>
+        </div>
+      </nav>
+    </div>
 
-</section>
-<allContacts *ngIf="selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS" (contactsClicked)="catchContact($event)"></allContacts>
-<captured *ngIf="selectedNavigationState == NAVIGATION_STATE.CAPTURED" (captureClicked)="catchCaptured($event)"></captured>
-<connected *ngIf="selectedNavigationState == NAVIGATION_STATE.CONNECTED" (connectedClicked)="catchConnected($event)"></connected>
+  </section>
+</div>
+<div class="container-fluid">
+  <allContacts *ngIf="selectedNavigationState == NAVIGATION_STATE.ALL_CONTACTS" (contactsClicked)="catchContact($event)"></allContacts>
+  <captured *ngIf="selectedNavigationState == NAVIGATION_STATE.CAPTURED" (captureClicked)="catchCaptured($event)"></captured>
+  <connected *ngIf="selectedNavigationState == NAVIGATION_STATE.CONNECTED" (connectedClicked)="catchConnected($event)"></connected>
+</div>

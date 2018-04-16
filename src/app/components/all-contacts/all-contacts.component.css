@@ -3,6 +3,13 @@
   flex-direction: column;
   max-height: 500px;
   min-width: 300px;
+  width: 94%;
+  margin-left: 2.8rem;
+  width: 80%;
+  margin-left: 8.7rem;
+  box-shadow:none;
+  background-color: #efefef !important;
+
 }
 
 .mat-table {
@@ -12,7 +19,7 @@
 
 .mat-column-select {
   overflow: visible;
-} 
+}
 
 .mat-checkbox-background{
   background-color: #03B6C8 !important;
@@ -21,4 +28,18 @@
 div.mat-checkbox-background{
   background-color: #03B6C8 !important;
 
+}
+.tableImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+  /* mat-header-row{
+    background-color: #efefef;
+  } */
+mat-header-cell span{
+  margin-left:1.5rem;
 }
